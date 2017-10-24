@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YourWayTour</title>
+    <link rel="stylesheet" href="css/vendors/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body style="overflow: visible;">
+
+    <!--[if lte IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+<![endif]-->
+
+    <div id="preloader" style="display: none;">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <!-- Header================================================== -->
+    <header id="colored" class="">
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <ul id="top_links">
+                            <li>
+                                <div class="dropdown dropdown-access">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
+                                    <div class="dropdown-menu">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <a href="#" class="bt_facebook">
+													<i class="icon-facebook"></i>Facebook </a>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <a href="#" class="bt_paypal">
+													<i class="icon-paypal"></i>Paypal </a>
+                                            </div>
+                                        </div>
+                                        <div class="login-or">
+                                            <hr class="hr-or">
+                                            <span class="span-or">or</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        </div>
+                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop">
+                                        <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline">
+                                    </div>
+                                </div>
+                                <!-- End Dropdown access -->
+                            </li>
+                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
+                            <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
+                            <li>
+                                <div class="dropdown dropdown-mini">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="lang_link" aria-expanded="false">English</a>
+                                    <div class="dropdown-menu">
+                                        <ul id="lang_menu">
+                                            <li><a href="#0">Spanish</a>
+                                            </li>
+                                            <li><a href="#0">French</a>
+                                            </li>
+                                            <li><a href="#0">German</a>
+                                            </li>
+                                            <li><a href="#0">Italian</a>
+                                            </li>
+                                            <li><a href="#0">Japanese</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Dropdown access -->
+                            </li>
+                            <li>
+                                <div class="dropdown dropdown-mini">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="currency_link" aria-expanded="true">Euro</a>
+                                    <div class="dropdown-menu">
+                                        <ul id="lang_menu">
+                                            <li><a href="#0">USD</a>
+                                            </li>
+                                            <li><a href="#0">GBP</a>
+                                            </li>
+                                            <li><a href="#0">EUR</a>
+                                            </li>
+                                            <li><a href="#0">CHF</a>
+                                            </li>
+                                            <li><a href="#0">BRL</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Dropdown access -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Dropdown access -->
+                </div>
+                <!-- End row -->
+
+            </div>
+            <!-- End container-->
+        </div>
+        <!-- End top line-->
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                    <a id="logotipo" class="navbar-brand" href="index.html"><img src="img/logo_yourway_white.png" alt=""></a>
+                    <div id="navegacao" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#top">Home</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a data-toggle="modal" data-target="#modalContato" href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu -->
+                    <ul id="top_tools">
+                        <li>
+                            <div class="dropdown dropdown-cart">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-shopping-cart">&nbsp;&nbsp;&nbsp;</i>Carrinho</a>
+                                <ul class="dropdown-menu" id="cart_items">
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                        <strong>
+										<a href="#">Louvre museum</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_2.jpg" alt="image"></div>
+                                        <strong>
+										<a href="#">Versailles tour</a>2x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_3.jpg" alt="image"></div>
+                                        <strong>
+										<a href="#">Versailles tour</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div>Total: <span>$120.00</span></div>
+                                        <a href="cart.html" class="button_drop">Go to cart</a>
+                                        <a href="payment.html" class="button_drop outline">Check out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End dropdown-cart-->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- container -->
+    </header>
+    <!-- End Header -->
+
+    <section id="search_container">
+        <div id="search">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tours" data-toggle="tab">Tours</a></li>
+                <li><a href="#hotels" data-toggle="tab">Hotels</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tours">
+                    <h3>Buscar por Tours</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Buscar por tours</label>
+                                <input class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Busque pelo o nome do tour" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Tours yourway</label>
+                                <div id="undefined" class="dd-container" style="width: 100%;">
+                                    <div class="dd-select" style="width: 100%; background: rgb(255, 255, 255);"><input class="dd-selected-value" type="hidden" name="category" value="0"><a class="dd-selected"><img class="dd-selected-image" src="img/icons_search/all_tours.png"><label class="dd-selected-text" style="line-height: 40px;">All tours</label></a><span class="dd-pointer dd-pointer-down"></span></div>
+                                    <ul class="dd-options dd-click-off-close" style="width: 100%; display: none;">
+                                        <li><a class="dd-option dd-option-selected"> <input class="dd-option-value" type="hidden" value="0"> <img class="dd-option-image" src="img/icons_search/all_tours.png"> <label class="dd-option-text" style="line-height: 45px;">All tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="1"> <img class="dd-option-image" src="img/icons_search/sightseeing.png"> <label class="dd-option-text" style="line-height: 45px;">City sightseeing</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="2"> <img class="dd-option-image" src="img/icons_search/museums.png"> <label class="dd-option-text" style="line-height: 45px;">Museum tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="3"> <img class="dd-option-image" src="img/icons_search/historic.png"> <label class="dd-option-text" style="line-height: 45px;">Historic Buildings</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="4"> <img class="dd-option-image" src="img/icons_search/walking.png"> <label class="dd-option-text" style="line-height: 45px;">Walking tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="5"> <img class="dd-option-image" src="img/icons_search/eat.png"> <label class="dd-option-text" style="line-height: 45px;">Eat &amp; Drink</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="6"> <img class="dd-option-image" src="img/icons_search/churches.png"> <label class="dd-option-text" style="line-height: 45px;">Churces</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="7"> <img class="dd-option-image" src="img/icons_search/skyline.png"> <label class="dd-option-text" style="line-height: 45px;">Skyline tours</label></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label><i class="icon-calendar-7"></i> Data</label>
+                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label><i class=" icon-clock"></i> Hora</label>
+                                <input class="time-pick form-control" value="12:00 AM" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="form-group">
+                                <label>Adultos</label>
+                                <div class="numbers-row">
+                                    <input value="1" id="adults" class="qty2 form-control" name="adults" type="text">
+                                    <div class="inc button_inc">+</div>
+                                    <div class="dec button_inc">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="form-group">
+                                <label>Crianças</label>
+                                <div class="numbers-row">
+                                    <input value="0" id="children" class="qty2 form-control" name="children" type="text">
+                                    <div class="inc button_inc">+</div>
+                                    <div class="dec button_inc">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <hr>
+                    <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
+                </div>
+                <!-- End rab -->
+                <div class="tab-pane" id="hotels">
+                    <h3>Buscar por Hotels</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label><i class="icon-calendar-7"></i> Chegada</label>
+                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label><i class="icon-calendar-7"></i> Saída</label>
+                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-5">
+                            <div class="form-group">
+                                <label>Adultos</label>
+                                <div class="numbers-row">
+                                    <input value="1" id="adults" class="qty2 form-control" name="adults_2" type="text">
+                                    <div class="inc button_inc">+</div>
+                                    <div class="dec button_inc">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-5">
+                            <div class="form-group">
+                                <label>Crianças</label>
+                                <div class="numbers-row">
+                                    <input value="0" id="children" class="qty2 form-control" name="children_2" type="text">
+                                    <div class="inc button_inc">+</div>
+                                    <div class="dec button_inc">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-12">
+                            <div class="form-group">
+                                <label>Quartos</label>
+                                <div class="numbers-row">
+                                    <input value="1" id="children" class="qty2 form-control" name="rooms" type="text">
+                                    <div class="inc button_inc">+</div>
+                                    <div class="dec button_inc">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Hotel</label>
+                                <input class="form-control" id="hotel_name" name="hotel_name" placeholder="Busque pelo o nome do hotel" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Cidade</label>
+                                <select class="form-control" name="area">
+												<option value="Centre" selected="">Serra</option>
+												<option value="Gar du Nord Station">Vila velha</option>
+												<option value="La Defance">Vitória</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <hr>
+                    <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero -->
+    <footer class="revealed" style="z-index: 0; position: fixed; bottom: 0px; width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <h3>Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
+                    <a href="mailto:help@citytours.com" id="email_footer">help@citytours.com</a>
+                    <strong>Secure payments with</strong>
+                    <p><img src="img/payments.png" width="231" height="30" alt="Image" data-retina="true" class="img-responsive">
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About us</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="#">Contacts</a>
+                        </li>
+                        <li><a href="#">Login</a>
+                        </li>
+                        <li><a href="#">Register</a>
+                        </li>
+                        <li><a href="#">Terms and condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6" id="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Join our newsletter to keep be informed about offers and news.</p>
+                    <div id="message-newsletter_2"></div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
+                        <div class="form-group">
+                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Your mail" class="form-control">
+                        </div>
+                        <input type="submit" value="Subscribe" class="btn_1" id="submit-newsletter_2">
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3>Settings</h3>
+                    <div class="styled-select">
+                        <select class="form-control" name="lang" id="lang">
+							<option value="English" selected="">English</option>
+							<option value="French">French</option>
+							<option value="Spanish">Spanish</option>
+							<option value="Russian">Russian</option>
+						</select>
+                    </div>
+                    <div class="styled-select">
+                        <select class="form-control" name="currency" id="currency">
+							<option value="USD" selected="">USD</option>
+							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="RUB">RUB</option>
+						</select>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-google"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-instagram"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a>
+                            </li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a>
+                            </li>
+                        </ul>
+                        <p>© Citytours 2015</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </footer>
+    <!-- End footer -->
+
+    <div id="toTop" style="display: none;"></div>
+    <!-- Back to top button -->
+
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="search" placeholder="Search...">
+            <button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+        </form>
+    </div>
+    <!-- End Search Menu -->
+
+    <!-- js (Bootstrap's JavaScript) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Common scripts -->
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <!-- Specific scripts -->
+    <script src="js/icheck.js"></script>
+    <script>
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-grey',
+            radioClass: 'iradio_square-grey'
+        });
+
+    </script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-timepicker.js"></script>
+    <script>
+        $('input.date-pick').datepicker('setDate', 'today');
+        $('input.time-pick').timepicker({
+            minuteStep: 15,
+            showInpunts: false
+        })
+
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] = function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>
