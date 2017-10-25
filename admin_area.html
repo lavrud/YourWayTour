@@ -815,14 +815,27 @@
 			</button>
         </form>
     </div>
-    <!-- End Search Menu -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- js (Bootstrap's JavaScript) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-    <!-- js (Main script file) -->
-    <script src="js/scripts.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Common scripts -->
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <!-- Specific scripts -->
+    <script src="js/tabs.js"></script>
+    <script>
+        new CBPFWTabs(document.getElementById('tabs'));
+
+    </script>
+    <script>
+        $('.wishlist_close_admin').on('click', function(c) {
+            $(this).parent().parent().parent().fadeOut('slow', function(c) {});
+        });
+
+    </script>
+    <!-- Animate scripts -->
+    <script src="js/wow.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b, o, i, l, e, r) {
@@ -840,27 +853,6 @@
         ga('send', 'pageview');
 
     </script>
-    <!-- Common scripts -->
-    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/common_scripts_min.js"></script>
-    <script src="js/functions.js"></script>
-
-    <!-- Specific scripts -->
-    <script src="js/tabs.js"></script>
-    <script>
-        new CBPFWTabs(document.getElementById('tabs'));
-
-    </script>
-    <script>
-        $('.wishlist_close_admin').on('click', function(c) {
-            $(this).parent().parent().parent().fadeOut('slow', function(c) {});
-        });
-
-    </script>
-
-
-
 </body>
 
 </html>

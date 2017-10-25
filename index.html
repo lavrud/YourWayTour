@@ -8,6 +8,7 @@
     <title>YourWayTour</title>
     <link rel="stylesheet" href="css/vendors/plugins.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
@@ -36,88 +37,64 @@
         <div id="top_line">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-7">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <i class="fa fa-phone"></i><strong class="env">&nbsp;&nbsp;:&nbsp;&nbsp;+55 (27) 9999-9999</strong><i class="trice fa fa-envelope"></i><strong>&nbsp;&nbsp;:&nbsp;&nbsp;suporte@yourwaytour.com</strong></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
                         <ul id="top_links">
                             <li>
                                 <div class="dropdown dropdown-access">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
+                                    <a href="#" data-toggle="dropdown" id="access_link"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i>Logar</a>
                                     <div class="dropdown-menu">
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <a href="#" class="bt_facebook">
-													<i class="icon-facebook"></i>Facebook </a>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <a href="#" class="bt_paypal">
-													<i class="icon-paypal"></i>Paypal </a>
-                                            </div>
-                                        </div>
-                                        <div class="login-or">
-                                            <hr class="hr-or">
-                                            <span class="span-or">or</span>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
                                         </div>
                                         <a id="forgot_pw" href="#">Forgot password?</a>
-                                        <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop">
-                                        <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline">
-                                    </div>
-                                </div>
-                                <!-- End Dropdown access -->
-                            </li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                            <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
-                            <li>
-                                <div class="dropdown dropdown-mini">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="lang_link" aria-expanded="false">English</a>
-                                    <div class="dropdown-menu">
-                                        <ul id="lang_menu">
-                                            <li><a href="#0">Spanish</a>
-                                            </li>
-                                            <li><a href="#0">French</a>
-                                            </li>
-                                            <li><a href="#0">German</a>
-                                            </li>
-                                            <li><a href="#0">Italian</a>
-                                            </li>
-                                            <li><a href="#0">Japanese</a>
-                                            </li>
-                                        </ul>
+                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
+                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
                                     </div>
                                 </div>
                                 <!-- End Dropdown access -->
                             </li>
                             <li>
-                                <div class="dropdown dropdown-mini">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="currency_link" aria-expanded="true">Euro</a>
+                                <div class="dropdown dropdown-access">
+                                    <a href="#" data-toggle="dropdown" id="access_link"><i class="fa fa-group">&nbsp;&nbsp;&nbsp;</i>Cadastrar</a>
                                     <div class="dropdown-menu">
-                                        <ul id="lang_menu">
-                                            <li><a href="#0">USD</a>
-                                            </li>
-                                            <li><a href="#0">GBP</a>
-                                            </li>
-                                            <li><a href="#0">EUR</a>
-                                            </li>
-                                            <li><a href="#0">CHF</a>
-                                            </li>
-                                            <li><a href="#0">BRL</a>
-                                            </li>
-                                        </ul>
+                                        <div class="login-or">
+                                            <hr class="hr">
+                                            <span class="span">Agência</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                                        </div>
+                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
+                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
+                                        <div class="login-or">
+                                            <hr class="hr">
+                                            <span class="span">Fornecedor</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                                        </div>
+                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
+                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
                                     </div>
                                 </div>
-                                <!-- End Dropdown access -->
                             </li>
                         </ul>
                     </div>
-                    <!-- End Dropdown access -->
                 </div>
                 <!-- End row -->
-
             </div>
             <!-- End container-->
         </div>
@@ -196,18 +173,18 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Tours yourway</label>
+                                <label>Things to do</label>
                                 <div id="undefined" class="dd-container" style="width: 100%;">
-                                    <div class="dd-select" style="width: 100%; background: rgb(255, 255, 255);"><input class="dd-selected-value" type="hidden" name="category" value="0"><a class="dd-selected"><img class="dd-selected-image" src="img/icons_search/all_tours.png"><label class="dd-selected-text" style="line-height: 40px;">All tours</label></a><span class="dd-pointer dd-pointer-down"></span></div>
+                                    <div class="dd-select" style="width: 100%; background: rgb(255, 255, 255);"><input class="dd-selected-value" type="hidden" name="category" value="0"><a class="dd-selected"><img class="dd-selected-image" src="img/all_tours.png"><label class="dd-selected-text" style="line-height: 40px;">All tours</label></a><span class="dd-pointer dd-pointer-down"></span></div>
                                     <ul class="dd-options dd-click-off-close" style="width: 100%; display: none;">
-                                        <li><a class="dd-option dd-option-selected"> <input class="dd-option-value" type="hidden" value="0"> <img class="dd-option-image" src="img/icons_search/all_tours.png"> <label class="dd-option-text" style="line-height: 45px;">All tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="1"> <img class="dd-option-image" src="img/icons_search/sightseeing.png"> <label class="dd-option-text" style="line-height: 45px;">City sightseeing</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="2"> <img class="dd-option-image" src="img/icons_search/museums.png"> <label class="dd-option-text" style="line-height: 45px;">Museum tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="3"> <img class="dd-option-image" src="img/icons_search/historic.png"> <label class="dd-option-text" style="line-height: 45px;">Historic Buildings</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="4"> <img class="dd-option-image" src="img/icons_search/walking.png"> <label class="dd-option-text" style="line-height: 45px;">Walking tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="5"> <img class="dd-option-image" src="img/icons_search/eat.png"> <label class="dd-option-text" style="line-height: 45px;">Eat &amp; Drink</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="6"> <img class="dd-option-image" src="img/icons_search/churches.png"> <label class="dd-option-text" style="line-height: 45px;">Churces</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="7"> <img class="dd-option-image" src="img/icons_search/skyline.png"> <label class="dd-option-text" style="line-height: 45px;">Skyline tours</label></a></li>
+                                        <li><a class="dd-option dd-option-selected"> <input class="dd-option-value" type="hidden" value="0"> <img class="dd-option-image" src="img/all_tours.png"> <label class="dd-option-text" style="line-height: 45px;">All tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="1"> <img class="dd-option-image" src="img/sightseeing.png"> <label class="dd-option-text" style="line-height: 45px;">City sightseeing</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="2"> <img class="dd-option-image" src="img/museums.png"> <label class="dd-option-text" style="line-height: 45px;">Museum tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="3"> <img class="dd-option-image" src="img/historic.png"> <label class="dd-option-text" style="line-height: 45px;">Historic Buildings</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="4"> <img class="dd-option-image" src="img/walking.png"> <label class="dd-option-text" style="line-height: 45px;">Walking tours</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="5"> <img class="dd-option-image" src="img/eat.png"> <label class="dd-option-text" style="line-height: 45px;">Eat &amp; Drink</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="6"> <img class="dd-option-image" src="img/churches.png"> <label class="dd-option-text" style="line-height: 45px;">Churces</label></a></li>
+                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="7"> <img class="dd-option-image" src="img/skyline.png"> <label class="dd-option-text" style="line-height: 45px;">Skyline tours</label></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -455,9 +432,11 @@
         $('input.time-pick').timepicker({
             minuteStep: 15,
             showInpunts: false
-        })
+        });
 
     </script>
+    <!-- Animate scripts -->
+    <script src="js/wow.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b, o, i, l, e, r) {

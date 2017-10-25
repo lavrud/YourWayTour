@@ -1,3 +1,7 @@
+body {
+    height: 1080px;
+}
+
 body,
 h1,
 h2,
@@ -5,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
 }
 
 a,
@@ -74,7 +78,7 @@ ul#top_links li {
 }
 
 .chromeframe a {
-    color: #ed1c24
+    color: #1cbbb4
 }
 
 body {
@@ -147,7 +151,7 @@ h6 span {
 }
 
 a {
-    color: #51bce6;
+    color: #fff;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     outline: 0
@@ -440,10 +444,6 @@ a.btn_full_outline:hover {
     color: #333
 }
 
-#logo {
-    margin-top: 10px
-}
-
 header {
     width: 100%;
     z-index: 99999;
@@ -536,7 +536,7 @@ header.sticky {
 }
 
 nav {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .sticky nav {
@@ -567,7 +567,7 @@ ul#top_links a {
 
 ul#top_tools li {
     display: inline-block;
-    padding: 0 10px
+    padding: 15px 10px
 }
 
 #top_line {
@@ -578,6 +578,16 @@ ul#top_tools li {
     opacity: 1;
     margin-bottom: 5px;
     z-index: 999999
+}
+
+.env {
+    padding-right: 15px;
+}
+
+.trice {
+    display: inline-block;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    padding-left: 15px;
 }
 
 ul#top_links {
@@ -593,30 +603,11 @@ a#wishlist_link {
     padding-left: 16px
 }
 
-#access_link:before,
-#wishlist_link:before {
-    font-style: normal;
-    font-weight: 400;
-    font-family: fontello;
-    font-size: 14px;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-#wishlist_link:before {
-    content: "\ec5e"
-}
-
-#access_link:before {
-    content: "\e97f"
-}
-
 ul#top_links li {
     display: inline-block;
     border-left: 1px solid rgba(255, 255, 255, .3);
-    margin-right: 5px;
-    padding-left: 8px
+    margin-right: 10px;
+
 }
 
 ul#top_links li:first-child {
@@ -669,9 +660,9 @@ header#plain ul#top_links a {
 }
 
 header#colored.sticky {
-    background-color: #e04f67;
+    background-color: #1cbbb4;
     padding-bottom: 0;
-    border-bottom: 2px solid #e04f67
+    border-bottom: 2px solid #1cbbb4
 }
 
 header#colored.sticky ul#top_tools a {
@@ -907,6 +898,7 @@ a#forgot_pw:hover {
     color: #fff;
     border-color: #e04f67
 }
+
 
 footer {
     background: url(../img/pattern.png) #333;
@@ -1357,12 +1349,6 @@ ul#cat_nav i {
     font-size: 22px;
     margin-right: 5px;
     float: left
-}
-
-#tools {
-    background: #eee;
-    padding: 5px;
-    margin-bottom: 15px
 }
 
 .marker_info {
@@ -4987,5 +4973,14 @@ nav.full-horizontal {
 }
 
 header.sticky nav.full-horizontal {
-    margin-top: 0
+    margin-top: -10px
+}
+
+#logotipo {
+    margin-top: -10px;
+}
+
+#navegacao {
+    padding-right: 150px;
+    float: right;
 }
