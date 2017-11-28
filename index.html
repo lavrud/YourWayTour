@@ -2,307 +2,258 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YourWayTour</title>
+    <meta name="description" content="YourWay serviços online de transfers & turismo.">
+    <meta name="keywords" content="Separe as keywords por vírgula. Por exemplo: internet, sites, sistemas web">
+    <meta name="author" content="Loquax TI, http://www.loquaxti.com.br/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/vendors/plugins.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="css/home_page.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
-<body style="overflow: visible;">
-
-    <!--[if lte IE 8]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
-<![endif]-->
-
-    <div id="preloader" style="display: none;">
-        <div class="sk-spinner sk-spinner-wave">
-            <div class="sk-rect1"></div>
-            <div class="sk-rect2"></div>
-            <div class="sk-rect3"></div>
-            <div class="sk-rect4"></div>
-            <div class="sk-rect5"></div>
-        </div>
-    </div>
-    <!-- End Preload -->
-
-    <div class="layer"></div>
-    <!-- Mobile menu overlay mask -->
-
-    <!-- Header================================================== -->
-    <header id="colored" class="">
+<body>
+    <header>
         <div id="top_line">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <i class="fa fa-phone"></i><strong class="env">&nbsp;&nbsp;:&nbsp;&nbsp;+55 (27) 9999-9999</strong><i class="trice fa fa-envelope"></i><strong>&nbsp;&nbsp;:&nbsp;&nbsp;suporte@yourwaytour.com</strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="content">
+                    <div class="phone_support">
+                        <i class="fa fa-phone">&nbsp;&nbsp;&nbsp;</i><strong class="env_icon">+55 (27) 9999-9999</strong><i class="phone_icon fa fa-envelope">&nbsp;&nbsp;&nbsp;</i><strong>suporte@yourwaytour.com</strong></div>
+                    <div class="logins_register">
                         <ul id="top_links">
                             <li>
                                 <div class="dropdown dropdown-access">
-                                    <a href="#" data-toggle="dropdown" id="access_link"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i>Logar</a>
+                                    <a href="#" data-toggle="dropdown" id="access_link">
+									<i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>Login</strong></a>
                                     <div class="dropdown-menu">
                                         <div class="form-group">
-                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
+                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text" required>
                                         </div>
                                         <div class="form-group">
-                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password" required>
                                         </div>
                                         <a id="forgot_pw" href="#">Forgot password?</a>
-                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
-                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
+                                        <input name="Sign_in" value="Entrar" id="Sign_in" class="button_drop" type="submit">
+                                        <input name="Sign_up" value="Registrar" id="Sign_up" class="button_drop outline" type="submit">
                                     </div>
+                                    <!-- End Dropdown Menu -->
                                 </div>
-                                <!-- End Dropdown access -->
+                                <!-- End Dropdown Access -->
                             </li>
                             <li>
-                                <div class="dropdown dropdown-access">
-                                    <a href="#" data-toggle="dropdown" id="access_link"><i class="fa fa-group">&nbsp;&nbsp;&nbsp;</i>Cadastrar</a>
-                                    <div class="dropdown-menu">
-                                        <div class="login-or">
-                                            <hr class="hr">
-                                            <span class="span">Agência</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-                                        </div>
-                                        <a id="forgot_pw" href="#">Forgot password?</a>
-                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
-                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
-                                        <div class="login-or">
-                                            <hr class="hr">
-                                            <span class="span">Fornecedor</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-                                        </div>
-                                        <a id="forgot_pw" href="#">Forgot password?</a>
-                                        <input name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" type="submit">
-                                        <input name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" type="submit">
-                                    </div>
+                                <div class="dropdown-access">
+                                    <a href="partners_form.html" id="access_link"><i class="reg_icon fa fa-group">&nbsp;&nbsp;&nbsp;</i> <strong>Parceiros</strong></a>
                                 </div>
                             </li>
                         </ul>
+                        <!-- End Top Links -->
                     </div>
                 </div>
-                <!-- End row -->
             </div>
-            <!-- End container-->
         </div>
-        <!-- End top line-->
-
+        <!-- End top line -->
         <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                    <a id="logotipo" class="navbar-brand" href="index.html"><img src="img/logo_yourway_white.png" alt=""></a>
-                    <div id="navegacao" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#top">Home</a></li>
-                            <li><a href="#servicos">Serviços</a></li>
-                            <li><a href="#produtos">Produtos</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a data-toggle="modal" data-target="#modalContato" href="#">Contato</a></li>
+            <div class="content">
+                <nav>
+                    <a id="logotipo"><img src="img/logo_yourway_white.png" alt=""></a>
+                    <div class="menu_top">
+                        <ul>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                        </ul>
+                        <!-- End Main Menu -->
+                        <ul id="top_cart">
+                            <li>
+                                <div class="dropdown dropdown-cart">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="cart_icon fa fa-shopping-cart"></i></a>
+                                    <ul class="dropdown-menu" id="cart_items">
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div id="total">Total: <span>$120.00</span></div>
+                                            <a href="cart.html" class="button_drop">Comprar</a>
+                                            <a href="payment.html" class="button_drop outline">Check-Out</a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Dropdown Menu -->
+                                </div>
+                                <!-- End Dropdown Cart -->
+                            </li>
                         </ul>
                     </div>
-                    <!-- End main-menu -->
-                    <ul id="top_tools">
-                        <li>
-                            <div class="dropdown dropdown-cart">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-shopping-cart">&nbsp;&nbsp;&nbsp;</i>Carrinho</a>
-                                <ul class="dropdown-menu" id="cart_items">
-                                    <li>
-                                        <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
-                                        <strong>
-										<a href="#">Louvre museum</a>1x $36.00 </strong>
-                                        <a href="#" class="action"><i class="icon-trash"></i></a>
-                                    </li>
-                                    <li>
-                                        <div class="image"><img src="img/thumb_cart_2.jpg" alt="image"></div>
-                                        <strong>
-										<a href="#">Versailles tour</a>2x $36.00 </strong>
-                                        <a href="#" class="action"><i class="icon-trash"></i></a>
-                                    </li>
-                                    <li>
-                                        <div class="image"><img src="img/thumb_cart_3.jpg" alt="image"></div>
-                                        <strong>
-										<a href="#">Versailles tour</a>1x $36.00 </strong>
-                                        <a href="#" class="action"><i class="icon-trash"></i></a>
-                                    </li>
-                                    <li>
-                                        <div>Total: <span>$120.00</span></div>
-                                        <a href="cart.html" class="button_drop">Go to cart</a>
-                                        <a href="payment.html" class="button_drop outline">Check out</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End dropdown-cart-->
-                        </li>
-                    </ul>
                 </nav>
             </div>
         </div>
 
-        <!-- container -->
-    </header>
-    <!-- End Header -->
+        <!-- End Container Nav -->
 
-    <section id="search_container">
-        <div id="search">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tours" data-toggle="tab">Tours</a></li>
-                <li><a href="#hotels" data-toggle="tab">Hotels</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tours">
-                    <h3>Buscar por Tours</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Buscar por tours</label>
-                                <input class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Busque pelo o nome do tour" type="text">
+        <!-- End Header -->
+        <section id="search_container">
+            <div id="search">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tours" data-toggle="tab">Tours</a></li>
+                    <li><a href="#hotels" data-toggle="tab">Hotels</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tours">
+                        <h3>Buscar por Tours</h3>
+                        <div class="row">
+                            <div class="busca_lugares">
+                                <div class="form-group">
+                                    <label>Buscar por tours</label>
+                                    <input class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Busque pelo o nome do tour" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Things to do</label>
-                                <div id="undefined" class="dd-container" style="width: 100%;">
-                                    <div class="dd-select" style="width: 100%; background: rgb(255, 255, 255);"><input class="dd-selected-value" type="hidden" name="category" value="0"><a class="dd-selected"><img class="dd-selected-image" src="img/all_tours.png"><label class="dd-selected-text" style="line-height: 40px;">All tours</label></a><span class="dd-pointer dd-pointer-down"></span></div>
-                                    <ul class="dd-options dd-click-off-close" style="width: 100%; display: none;">
-                                        <li><a class="dd-option dd-option-selected"> <input class="dd-option-value" type="hidden" value="0"> <img class="dd-option-image" src="img/all_tours.png"> <label class="dd-option-text" style="line-height: 45px;">All tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="1"> <img class="dd-option-image" src="img/sightseeing.png"> <label class="dd-option-text" style="line-height: 45px;">City sightseeing</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="2"> <img class="dd-option-image" src="img/museums.png"> <label class="dd-option-text" style="line-height: 45px;">Museum tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="3"> <img class="dd-option-image" src="img/historic.png"> <label class="dd-option-text" style="line-height: 45px;">Historic Buildings</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="4"> <img class="dd-option-image" src="img/walking.png"> <label class="dd-option-text" style="line-height: 45px;">Walking tours</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="5"> <img class="dd-option-image" src="img/eat.png"> <label class="dd-option-text" style="line-height: 45px;">Eat &amp; Drink</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="6"> <img class="dd-option-image" src="img/churches.png"> <label class="dd-option-text" style="line-height: 45px;">Churces</label></a></li>
-                                        <li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="7"> <img class="dd-option-image" src="img/skyline.png"> <label class="dd-option-text" style="line-height: 45px;">Skyline tours</label></a></li>
-                                    </ul>
+                            <div class="busca_lugares">
+                                <div class="form-group">
+                                    <label>Locais</label>
+                                    <div class="form-group">
+                                        <select class="form-control" name="area">
+												<option value="boates" selected="">Boates</option>
+												<option value="restaurantes Station">Restaurantes</option>
+												<option value="carros">Carros </option></select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="calendar">
+                                <div class="form-group">
+                                    <label><i class="fa fa-calendar"></i> Data</label>
+                                    <input class="date-pick form-control" data-date-format="dd / mm / yyyy" type="text">
+                                </div>
+                            </div>
+                            <div class="hora">
+                                <div class="form-group">
+                                    <label><i class="fa fa-clock-o"></i> Hora</label>
+                                    <input class="time-pick form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="adult">
+                                <div class="form-group">
+                                    <label>Adultos</label>
+                                    <div class="numbers-row">
+                                        <input value="0" id="adults" class="qty2 form-control" name="adults" type="text">
+                                        <div class="inc button_inc">+</div>
+                                        <div class="dec button_inc">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="form-group">
+                                    <label>Crianças</label>
+                                    <div class="numbers-row">
+                                        <input value="0" id="children" class="qty2 form-control" name="children" type="text">
+                                        <div class="inc button_inc">+</div>
+                                        <div class="dec button_inc">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End row -->
+                        <hr>
+                        <button class="btn_1 green"><i class="fa fa-search"></i>&nbsp; Buscar Agora</button>
                     </div>
-                    <!-- End row -->
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><i class="icon-calendar-7"></i> Data</label>
-                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    <!-- End rab -->
+                    <div class="tab-pane" id="hotels">
+                        <h3>Buscar por Hotels</h3>
+                        <div class="row">
+                            <div class="calendar">
+                                <div class="form-group">
+                                    <label><i class="fa fa-calendar"></i> Chegada</label>
+                                    <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><i class=" icon-clock"></i> Hora</label>
-                                <input class="time-pick form-control" value="12:00 AM" type="text">
+                            <div class="calendar">
+                                <div class="form-group">
+                                    <label><i class="fa fa-calendar"></i> Saída</label>
+                                    <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6">
-                            <div class="form-group">
-                                <label>Adultos</label>
-                                <div class="numbers-row">
-                                    <input value="1" id="adults" class="qty2 form-control" name="adults" type="text">
-                                    <div class="inc button_inc">+</div>
-                                    <div class="dec button_inc">-</div>
+                            <div class="adult">
+                                <div class="form-group">
+                                    <label>Adultos</label>
+                                    <div class="numbers-row">
+                                        <input value="1" id="adults" class="qty2 form-control" name="adults_2" type="text">
+                                        <div class="inc button_inc">+</div>
+                                        <div class="dec button_inc">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="form-group">
+                                    <label>Crianças</label>
+                                    <div class="numbers-row">
+                                        <input value="0" id="children" class="qty2 form-control" name="children_2" type="text">
+                                        <div class="inc button_inc">+</div>
+                                        <div class="dec button_inc">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <div class="form-group">
+                                    <label>Quartos</label>
+                                    <div class="numbers-row">
+                                        <input value="1" id="children" class="qty2 form-control" name="rooms" type="text">
+                                        <div class="inc button_inc">+</div>
+                                        <div class="dec button_inc">-</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6">
-                            <div class="form-group">
-                                <label>Crianças</label>
-                                <div class="numbers-row">
-                                    <input value="0" id="children" class="qty2 form-control" name="children" type="text">
-                                    <div class="inc button_inc">+</div>
-                                    <div class="dec button_inc">-</div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="busca_lugares">
+                                <div class="form-group">
+                                    <label>Hotel</label>
+                                    <input class="form-control" id="hotel_name" name="hotel_name" placeholder="Busque pelo o nome do hotel" type="text">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- End row -->
-                    <hr>
-                    <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
-                </div>
-                <!-- End rab -->
-                <div class="tab-pane" id="hotels">
-                    <h3>Buscar por Hotels</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><i class="icon-calendar-7"></i> Chegada</label>
-                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><i class="icon-calendar-7"></i> Saída</label>
-                                <input class="date-pick form-control" data-date-format="M d, D" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-5">
-                            <div class="form-group">
-                                <label>Adultos</label>
-                                <div class="numbers-row">
-                                    <input value="1" id="adults" class="qty2 form-control" name="adults_2" type="text">
-                                    <div class="inc button_inc">+</div>
-                                    <div class="dec button_inc">-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-5">
-                            <div class="form-group">
-                                <label>Crianças</label>
-                                <div class="numbers-row">
-                                    <input value="0" id="children" class="qty2 form-control" name="children_2" type="text">
-                                    <div class="inc button_inc">+</div>
-                                    <div class="dec button_inc">-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-12">
-                            <div class="form-group">
-                                <label>Quartos</label>
-                                <div class="numbers-row">
-                                    <input value="1" id="children" class="qty2 form-control" name="rooms" type="text">
-                                    <div class="inc button_inc">+</div>
-                                    <div class="dec button_inc">-</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End row -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Hotel</label>
-                                <input class="form-control" id="hotel_name" name="hotel_name" placeholder="Busque pelo o nome do hotel" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Cidade</label>
-                                <select class="form-control" name="area">
+                            <div class="busca_lugares">
+                                <div class="form-group">
+                                    <label>Cidade</label>
+                                    <select class="form-control" name="area">
 												<option value="Centre" selected="">Serra</option>
 												<option value="Gar du Nord Station">Vila velha</option>
 												<option value="La Defance">Vitória</option></select>
+                                </div>
                             </div>
                         </div>
+                        <!-- End row -->
+                        <hr>
+                        <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
                     </div>
-                    <!-- End row -->
-                    <hr>
-                    <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
     <!-- End hero -->
-    <footer class="revealed" style="z-index: 0; position: fixed; bottom: 0px; width: 100%;">
+    <footer class="revealed" style="z-index: 0; position: relative; bottom: 0px; width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -368,21 +319,11 @@
                 <div class="col-md-12">
                     <div id="social_footer">
                         <ul>
-                            <li><a href="#"><i class="icon-facebook"></i></a>
+                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="icon-twitter"></i></a>
+                            <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
                             </li>
-                            <li><a href="#"><i class="icon-google"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-pinterest"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-vimeo"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-youtube-play"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a>
+                            <li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
                             </li>
                         </ul>
                         <p>© Citytours 2015</p>
@@ -395,7 +336,9 @@
     </footer>
     <!-- End footer -->
 
-    <div id="toTop" style="display: none;"></div>
+    <div id="toTop">
+        <i class="fa fa-arrow-circle-up"></i>
+    </div>
     <!-- Back to top button -->
 
     <!-- Search Menu -->
@@ -407,12 +350,10 @@
 			</button>
         </form>
     </div>
-    <!-- End Search Menu -->
-
     <!-- js (Bootstrap's JavaScript) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Common scripts -->
     <script src="js/common_scripts_min.js"></script>
     <script src="js/functions.js"></script>
@@ -425,10 +366,16 @@
         });
 
     </script>
-    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="js/bootstrap-timepicker.js"></script>
     <script>
-        $('input.date-pick').datepicker('setDate', 'today');
+        $('input.date-pick').datepicker({
+            format: "dd/mm/yyyy",
+            language: "pt-BR",
+            startDate: '+0d',
+        });
+        $('input.date-pick').datepicker('setDate', 'Today');
         $('input.time-pick').timepicker({
             minuteStep: 15,
             showInpunts: false
@@ -436,9 +383,12 @@
 
     </script>
     <!-- Animate scripts -->
+    <script src="bower_components/wow/dist/wow.min.js"></script>
     <script src="js/wow.js"></script>
+    <!-- Retina -->
+    <script src="js/retina.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <!--<script>
         (function(b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;
             b[l] || (b[l] = function() {
@@ -453,7 +403,7 @@
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
 
-    </script>
+    </script>-->
 </body>
 
 </html>
