@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/home_page.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
@@ -246,7 +247,7 @@
                         </div>
                         <!-- End row -->
                         <hr>
-                        <button class="btn_1 green"><i class="icon-search"></i>Buscar Agora</button>
+                        <button class="btn_1 green"><i class="fa fa-search"></i>&nbsp; Buscar Agora</button>
                     </div>
                 </div>
             </div>
@@ -353,7 +354,7 @@
     <!-- js (Bootstrap's JavaScript) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Common scripts -->
     <script src="js/common_scripts_min.js"></script>
     <script src="js/functions.js"></script>
@@ -368,18 +369,18 @@
     </script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
-    <script src="js/bootstrap-timepicker.js"></script>
+    <script src="js/bootstrap-timepicker.min.js"></script>
     <script>
         $('input.date-pick').datepicker({
             format: "dd/mm/yyyy",
             language: "pt-BR",
             startDate: '+0d',
         });
-        $('input.date-pick').datepicker('setDate', 'Today');
+        $('input.date-pick').datepicker('setDate', 'today');
         $('input.time-pick').timepicker({
-            minuteStep: 15,
-            showInpunts: false
-        });
+            minuteStep: 1,
+            showInpunts: false,
+        })
 
     </script>
     <!-- Animate scripts -->
