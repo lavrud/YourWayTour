@@ -1,11 +1,14 @@
 header {
-    background-color: #009a9a;
     #top_line {
+        top: 0;
         border-bottom: 1px solid rgba(255, 255, 255, .2);
-        position: relative;
+        background-color: #009a9a;
+        position: fixed;
         font-size: 11px;
         padding: 8px;
+        width: 100%;
         height: 32px;
+        z-index: 999;
         .phone_support {
             @include make-xs-column(6);
             @include make-sm-column(6);
@@ -54,8 +57,9 @@ header {
                             font-size: 12px;
                             font-weight: normal;
                             text-shadow: none;
-                            text-transform: none !important;
+                            text-transform: none;
                             border-top: 3px solid #303f9f;
+                            z-index: 999px;
                             .form-group,
                             .from-control,
                             #inputPassword,
@@ -131,6 +135,11 @@ header {
     }
     /* === End Top Line === */
     nav {
+        top: 32px;
+        width: 100%;
+        position: fixed;
+        background-color: #009a9a;
+        z-index: 99;
         a#logotipo,
         img {
             max-width: 220px;
@@ -140,7 +149,7 @@ header {
         .menu_top {
             float: right;
             ul {
-                margin-right: 150px;
+                margin-right: 225px;
                 li,
                 a {
                     margin-top: 20px;
@@ -155,8 +164,8 @@ header {
         }
         /* === End Main Menu === */
         ul#top_cart {
-            top: 30px;
-            right: -25px;
+            top: 0px;
+            right: -85px;
             font-size: 25px;
             position: absolute;
             display: inline-block;
@@ -279,283 +288,3 @@ header {
 }
 
 /* === End Header === */
-
-#search_container {
-    background: url(../img/bg_city.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
-    display: table;
-    height: 600px;
-    width: 100%;
-    #search {
-        display: table-cell;
-        vertical-align: middle;
-        padding: 0px 20% 0;
-        .nav-tabs > li > a {
-            border-radius: 0;
-            border: 0;
-            color: #fff !important;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .nav-tabs > li.active > a {
-            color: #fff;
-            background-color: #e14d67;
-        }
-        .tab-content {
-            padding: 40px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-top: none;
-            margin-bottom: 25px;
-            -webkit-border-bottom-right-radius: 3px;
-            -webkit-border-bottom-left-radius: 3px;
-            -moz-border-radius-bottomright: 3px;
-            -moz-border-radius-bottomleft: 3px;
-            border-bottom-right-radius: 3px;
-            border-bottom-left-radius: 3px;
-            .tab-pane {
-                color: #333;
-                font-style: italic;
-                .tab-pane,
-                h3 {
-                    color: #999;
-                    margin: 0 0 25px;
-                }
-                .busca_lugares {
-                    @include make-md-column(6);
-                    .form-group {
-                        position: relative;
-                        input.form-control {
-                            font-size: 12px;
-                            color: #333;
-                            height: 40px;
-                            border-radius: 3px;
-                        }
-                    }
-                }
-                .calendar {
-                    @include make-md-column(3);
-                    .form-group {
-                        position: relative;
-                        input.form-control {
-                            font-size: 12px;
-                            color: #333;
-                            border-radius: 3px;
-                        }
-                    }
-                }
-                .hora {
-                    @include make-md-column(3);
-                    .form-group {
-                        position: relative;
-                        input.form-control {
-                            font-size: 12px;
-                            color: #333;
-                            border-radius: 3px;
-                        }
-                    }
-                }
-                .adult {
-                    @include make-xs-column(6);
-                    @include make-sm-column(3);
-                    @include make-md-column(2);
-                    .form-group {
-                        position: relative;
-                        .numbers-row {
-                            width: 97px;
-                            overflow: visible;
-                            input.qty2.form-control {
-                                width: 35px;
-                                border-radius: none;
-                                left: 31px;
-                                font-size: 12px;
-                                padding: 5px;
-                                text-align: center;
-                                position: relative;
-                                height: 40px;
-                            }
-                            .button_inc {
-                                position: absolute;
-                                margin-top: 24px;
-                                width: 33px;
-                                height: 40px;
-                                text-indent: -9999px;
-                                cursor: pointer;
-                                z-index: 9;
-                            }
-                            .inc {
-                                background: url(../img/plus.png) center center no-repeat #fff;
-                                right: 0;
-                                top: 0;
-                                border: 1px solid #ccc;
-                                -webkit-border-top-right-radius: 4px;
-                                -webkit-border-bottom-right-radius: 4px;
-                                -moz-border-radius-topright: 4px;
-                                -moz-border-radius-bottomright: 4px;
-                                border-top-right-radius: 4px;
-                                border-bottom-right-radius: 4px;
-                            }
-                            .dec {
-                                background: url(../img/minus.png) center center no-repeat #fff;
-                                border: 1px solid #ccc;
-                                left: 0;
-                                top: 0;
-                                -webkit-border-top-left-radius: 4px;
-                                -webkit-border-bottom-left-radius: 4px;
-                                -moz-border-radius-topleft: 4px;
-                                -moz-border-radius-bottomleft: 4px;
-                                border-top-left-radius: 4px;
-                                border-bottom-left-radius: 4px;
-                            }
-                        }
-                    }
-                }
-                .child {
-                    @include make-xs-column(6);
-                    @include make-sm-column(3);
-                    @include make-md-column(2);
-                    .form-group {
-                        position: relative;
-                        .numbers-row {
-                            width: 97px;
-                            overflow: visible;
-                            input.qty2.form-control {
-                                width: 35px;
-                                border-radius: none;
-                                left: 31px;
-                                font-size: 12px;
-                                padding: 5px;
-                                text-align: center;
-                                position: relative;
-                                height: 40px;
-                            }
-                            .button_inc {
-                                position: absolute;
-                                margin-top: 24px;
-                                width: 33px;
-                                height: 40px;
-                                text-indent: -9999px;
-                                cursor: pointer;
-                                z-index: 9;
-                            }
-                            .inc {
-                                background: url(../img/plus.png) center center no-repeat #fff;
-                                right: 0;
-                                top: 0;
-                                border: 1px solid #ccc;
-                                -webkit-border-top-right-radius: 4px;
-                                -webkit-border-bottom-right-radius: 4px;
-                                -moz-border-radius-topright: 4px;
-                                -moz-border-radius-bottomright: 4px;
-                                border-top-right-radius: 4px;
-                                border-bottom-right-radius: 4px;
-                            }
-                            .dec {
-                                background: url(../img/minus.png) center center no-repeat #fff;
-                                border: 1px solid #ccc;
-                                left: 0;
-                                top: 0;
-                                -webkit-border-top-left-radius: 4px;
-                                -webkit-border-bottom-left-radius: 4px;
-                                -moz-border-radius-topleft: 4px;
-                                -moz-border-radius-bottomleft: 4px;
-                                border-top-left-radius: 4px;
-                                border-bottom-left-radius: 4px;
-                            }
-                        }
-                    }
-                }
-                .room {
-                    @include make-xs-column(6);
-                    @include make-sm-column(3);
-                    @include make-md-column(2);
-                    .form-group {
-                        position: relative;
-                        .numbers-row {
-                            width: 97px;
-                            overflow: visible;
-                            input.qty2.form-control {
-                                width: 35px;
-                                border-radius: none;
-                                left: 31px;
-                                font-size: 12px;
-                                padding: 5px;
-                                text-align: center;
-                                position: relative;
-                                height: 40px;
-                            }
-                            .button_inc {
-                                position: absolute;
-                                margin-top: 24px;
-                                width: 33px;
-                                height: 40px;
-                                text-indent: -9999px;
-                                cursor: pointer;
-                                z-index: 9;
-                            }
-                            .inc {
-                                background: url(../img/plus.png) center center no-repeat #fff;
-                                right: 0;
-                                top: 0;
-                                border: 1px solid #ccc;
-                                -webkit-border-top-right-radius: 4px;
-                                -webkit-border-bottom-right-radius: 4px;
-                                -moz-border-radius-topright: 4px;
-                                -moz-border-radius-bottomright: 4px;
-                                border-top-right-radius: 4px;
-                                border-bottom-right-radius: 4px;
-                            }
-                            .dec {
-                                background: url(../img/minus.png) center center no-repeat #fff;
-                                border: 1px solid #ccc;
-                                left: 0;
-                                top: 0;
-                                -webkit-border-top-left-radius: 4px;
-                                -webkit-border-bottom-left-radius: 4px;
-                                -moz-border-radius-topleft: 4px;
-                                -moz-border-radius-bottomleft: 4px;
-                                border-top-left-radius: 4px;
-                                border-bottom-left-radius: 4px;
-                            }
-                        }
-                    }
-                }
-                .btn_1 {
-                    background: #83c99f;
-                    text-transform: uppercase;
-                    padding: 15px;
-                    color: #fff;
-                    border: none;
-                    border-radius: 3px;
-                }
-                .btn_1:hover {
-                    color: #fff;
-                    background: #333;
-                    transition: .5s;
-                }
-            }
-        }
-    }
-}
-
-
-
-footer {}
-
-/* === End Footer === */
-
-#toTop {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    line-height: 20px;
-    position: fixed;
-    bottom: 10px;
-    cursor: pointer;
-    display: none;
-    color: #fff;
-    font-size: 20px;
-    right: 10px;
-    text-align: center;
-}
