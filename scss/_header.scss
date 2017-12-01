@@ -139,12 +139,13 @@ header {
         width: 100%;
         position: fixed;
         background-color: #009a9a;
+        padding: 15px;
         z-index: 99;
         a#logotipo,
         img {
             max-width: 220px;
             max-height: 150px;
-            padding: 25px;
+            margin-left: 65px;
         }
         .menu_top {
             float: right;
@@ -152,7 +153,7 @@ header {
                 margin-right: 225px;
                 li,
                 a {
-                    margin-top: 20px;
+
                     padding: 0 10px;
                     display: inline-block;
                     list-style: none;
@@ -164,7 +165,7 @@ header {
         }
         /* === End Main Menu === */
         ul#top_cart {
-            top: 0px;
+            top: 10px;
             right: -85px;
             font-size: 25px;
             position: absolute;
