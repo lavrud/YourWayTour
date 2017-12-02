@@ -334,9 +334,9 @@
     <script src="js/bootstrap-timepicker.min.js"></script>
     <script>
         $('input.date-pick').datepicker({
+            startDate: '+0d',
             format: "dd/mm/yyyy",
             language: "pt-BR",
-            startDate: '+0d',
         });
         $('input.date-pick').datepicker('setDate', 'today');
         $('input.time-pick').timepicker({
