@@ -6,97 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YourWayTour</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adminarea_page.css">
     <link rel="stylesheet" href="css/vendors/plugins.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
-<body style="overflow: visible;">
-    <div class="parallax-mirror" style="visibility: hidden; z-index: 1; position: fixed; top: -426px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 470px; width: 1349px;"><img class="parallax-slider" src="img/admin_top.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: 340.8px; left: -25px; height: 470px; width: 1400px; max-width: none;"></div>
-
-    <!--[if lte IE 8]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
-<![endif]-->
-
-    <div id="preloader" style="display: none;">
-        <div class="sk-spinner sk-spinner-wave">
-            <div class="sk-rect1"></div>
-            <div class="sk-rect2"></div>
-            <div class="sk-rect3"></div>
-            <div class="sk-rect4"></div>
-            <div class="sk-rect5"></div>
-        </div>
-    </div>
-    <!-- End Preload -->
-
-    <div class="layer"></div>
-    <!-- Mobile menu overlay mask -->
-
-    <!-- Header================================================== -->
-    <header class="sticky">
+<body>
+    <header>
         <div id="top_line">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="content">
+                    <div class="phone_support">
+                        <i class="fa fa-phone">&nbsp;&nbsp;&nbsp;</i><strong class="env_icon">+55 (27) 99999-9999</strong><i class="phone_icon fa fa-envelope">&nbsp;&nbsp;&nbsp;</i><strong>suporte@yourwaytour.com</strong></div>
+                    <div class="logins_register">
                         <ul id="top_links">
                             <li>
                                 <div class="dropdown dropdown-access">
-                                    <a href="#" id="access_link">Sign Out</a>
+                                    <a href="#" data-toggle="dropdown" id="access_link">
+									<i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>Login</strong></a>
+                                    <div class="dropdown-menu">
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputUsernameEmail" placeholder="Email" type="text" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="inputPassword" placeholder="Password" type="password" required>
+                                        </div>
+                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input name="Sign_in" value="Entrar" id="Sign_in" class="button_drop" type="submit">
+                                        <input name="Sign_up" value="Registrar" id="Sign_up" class="button_drop outline" type="submit">
+                                    </div>
+                                    <!-- End Dropdown Menu -->
+                                </div>
+                                <!-- End Dropdown Access -->
+                            </li>
+                            <li>
+                                <div class="dropdown-access">
+                                    <a href="partners_form.html" id="access_link"><i class="reg_icon fa fa-group">&nbsp;&nbsp;&nbsp;</i> <strong>Parceiros</strong></a>
                                 </div>
                             </li>
                         </ul>
+                        <!-- End Top Links -->
                     </div>
                 </div>
-                <!-- End row -->
             </div>
-            <!-- End container-->
         </div>
-        <!-- End top line-->
-
-        <div class="container">
+        <!-- End top line -->
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <div id="logo">
-                        <a href="index.html"><img src="img/logo.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_normal">
-							</a>
-                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_sticky">
-							</a>
+                <nav>
+                    <a id="logotipo"><img src="img/logo_yourway_white.png" alt=""></a>
+                    <div class="menu_top">
+                        <ul>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">menu</a></li>
+                        </ul>
+                        <!-- End Main Menu -->
+                        <ul id="top_cart">
+                            <li>
+                                <div class="dropdown dropdown-cart">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="cart_icon fa fa-shopping-cart"></i></a>
+                                    <ul class="dropdown-menu" id="cart_items">
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                            <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                            <a href="#" class="action"><i class="fa fa-trash"></i></a>
+                                        </li>
+                                        <li>
+                                            <div id="total">Total: <span>$120.00</span></div>
+                                            <a href="cart.html" class="button_drop">Comprar</a>
+                                            <a href="payment.html" class="button_drop outline">Check-Out</a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Dropdown Menu -->
+                                </div>
+                                <!-- End Dropdown Cart -->
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
-        <!-- container -->
+
+        <!-- End Container Nav -->
     </header>
     <!-- End Header -->
-
-
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/admin_top.jpg" data-natural-width="1400" data-natural-height="470">
-        <div class="parallax-content-1">
-            <div class="animated fadeInDown">
-                <h1>Hello Clara!</h1>
-                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
-            </div>
-        </div>
-    </section>
-    <!-- End section -->
-
-    <main style="margin-bottom: 353px;">
-        <div id="position">
-            <div class="container">
-                <ul>
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Category</a>
-                    </li>
-                    <li>Page active</li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Position -->
+    <main style="margin-top: 150px; margin-bottom: 40px;">
 
         <div class="margin_60 container">
             <div id="tabs" class="tabs">
@@ -104,11 +116,9 @@
                     <ul>
                         <li class="tab-current"><a href="#section-1" class="icon-booking"><span>Bookings</span></a>
                         </li>
-                        <li><a href="#section-2" class="icon-wishlist"><span>Wishlist</span></a>
+                        <li class=""><a href="#section-3" class="icon-settings"><span>Settings</span></a>
                         </li>
-                        <li><a href="#section-3" class="icon-settings"><span>Settings</span></a>
-                        </li>
-                        <li><a href="#section-4" class="icon-profile"><span>Profile</span></a>
+                        <li class=""><a href="#section-4" class="icon-profile"><span>Profile</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -255,183 +265,9 @@
                     </section>
                     <!-- End section 1 -->
 
-                    <section id="section-2">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="hotel_container">
-                                    <div class="img_container">
-                                        <a href="single_hotel.html">
-											<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon top_rated">
-											</div>
-											<div class="score">
-												<span>7.5</span>Good
-											</div>
-											<div class="short_info hotel">
-												From/Per night<span class="price"><sup>$</sup>59</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="hotel_title">
-                                        <h3><strong>Park Hyatt</strong> Hotel</h3>
-                                        <div class="rating">
-                                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box tour -->
-                            </div>
-                            <!-- End col-md-6 -->
 
-                            <div class="col-md-4 col-sm-6 ">
-                                <div class="hotel_container">
-                                    <div class="img_container">
-                                        <a href="single_hotel.html">
-											<img src="img/hotel_2.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon top_rated">
-											</div>
-											<div class="score">
-												<span>9.0</span>Superb
-											</div>
-											<div class="short_info hotel">
-												From/Per night<span class="price"><sup>$</sup>45</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="hotel_title">
-                                        <h3><strong>Mariott</strong> Hotel</h3>
-                                        <div class="rating">
-                                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box -->
-                            </div>
-                            <!-- End col-md-6 -->
 
-                            <div class="col-md-4 col-sm-6">
-                                <div class="tour_container">
-                                    <div class="img_container">
-                                        <a href="single_tour.html">
-											<img src="img/tour_box_1.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon top_rated">
-											</div>
-											<div class="short_info">
-												<i class="icon_set_1_icon-44"></i>Historic Buildings<span class="price"><sup>$</sup>45</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="tour_title">
-                                        <h3><strong>Arc Triomphe</strong> tour</h3>
-                                        <div class="rating">
-                                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box tour -->
-                            </div>
-                            <!-- End col-md-6 -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="tour_container">
-                                    <div class="img_container">
-                                        <a href="single_tour.html">
-											<img src="img/tour_box_3.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon popular">
-											</div>
-											<div class="short_info">
-												<i class="icon_set_1_icon-44"></i>Historic Buildings<span class="price"><sup>$</sup>45</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="tour_title">
-                                        <h3><strong>Versailles</strong> tour</h3>
-                                        <div class="rating">
-                                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box tour -->
-                            </div>
-                            <!-- End col-md-6 -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="tour_container">
-                                    <div class="img_container">
-                                        <a href="single_tour.html">
-											<img src="img/tour_box_4.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon popular">
-											</div>
-											<div class="short_info">
-												<i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>45</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="tour_title">
-                                        <h3><strong>Pompidue</strong> tour</h3>
-                                        <div class="rating">
-                                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box tour -->
-                            </div>
-                            <!-- End col-md-6 -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="transfer_container">
-                                    <div class="img_container">
-                                        <a href="single_transfer.html">
-											<img src="img/transfer_1.jpg" width="800" height="533" class="img-responsive" alt="Image">
-											<div class="ribbon top_rated">
-											</div>
-											<div class="short_info">
-												From/Per person<span class="price"><sup>$</sup>45</span>
-											</div>
-										</a>
-                                    </div>
-                                    <div class="transfer_title">
-                                        <h3><strong>Orly Airport</strong> private</h3>
-                                        <div class="rating">
-                                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
-                                        </div>
-                                        <!-- end rating -->
-                                        <div class="wishlist_close_admin">
-                                            -
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End box tour -->
-                            </div>
-                            <!-- End col-md-6 -->
-
-                        </div>
-                        <!-- End row -->
-                        <button type="submit" class="btn_1 green">Update wishlist</button>
-                    </section>
-                    <!-- End section 2 -->
-
-                    <section id="section-3">
+                    <section id="section-3" class="">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 add_bottom_30">
                                 <h4>Change your password</h4>
@@ -556,7 +392,7 @@
                     </section>
                     <!-- End section 3 -->
 
-                    <section id="section-4">
+                    <section id="section-4" class="">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <h4>Your profile</h4>
@@ -708,93 +544,54 @@
         </div>
         <!-- end container -->
     </main>
-    <!-- End main -->
-
-    <footer class="revealed" style="z-index: 0; position: fixed; bottom: 0px; width: 1349px;">
+    <footer class="revealed">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <h3>Need help?</h3>
-                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
-                    <a href="mailto:help@citytours.com" id="email_footer">help@citytours.com</a>
-                    <strong>Secure payments with</strong>
-                    <p><img src="img/payments.png" width="231" height="30" alt="Image" data-retina="true" class="img-responsive">
+                <div class="ajuda">
+                    <h3>Precisa de ajuda?</h3>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527999999999" id="phone"><i class="fa fa-whatsapp"></i>&nbsp; +55 27 99999-9999</a>
+                    <a href="mailto:help@citytours.com" id="email_footer"><i class="fa fa-envelope-o"></i>&nbsp;  suporte@yourwaytour.com</a>
+                    <strong>Pagamentos seguros com</strong>
+                    <p><img src="img/payments.png" alt="Image" data-retina="true" class="img-responsive">
                     </p>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <h3>About</h3>
+                <div class="sobre">
+                    <h3>Sobre</h3>
                     <ul>
-                        <li><a href="#">About us</a>
+                        <li><a href="#">Missão</a>
                         </li>
                         <li><a href="#">FAQ</a>
                         </li>
                         <li><a href="#">Blog</a>
                         </li>
-                        <li><a href="#">Contacts</a>
-                        </li>
-                        <li><a href="#">Login</a>
-                        </li>
-                        <li><a href="#">Register</a>
-                        </li>
-                        <li><a href="#">Terms and condition</a>
+                        <li><a href="#">Termos &amp; Condições</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6" id="newsletter">
+                <div class="news" id="newsletter">
                     <h3>Newsletter</h3>
-                    <p>Join our newsletter to keep be informed about offers and news.</p>
+                    <p>Junte-se a nossa newsletter para manter-se informado sobre ofertas e novidades.</p>
                     <div id="message-newsletter_2"></div>
                     <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
                         <div class="form-group">
-                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Your mail" class="form-control">
+                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Insira seu e-mail" class="form-control">
                         </div>
-                        <input type="submit" value="Subscribe" class="btn_1" id="submit-newsletter_2">
+                        <input type="submit" value="Inscrever" class="btn_1" id="submit-newsletter_2">
                     </form>
                 </div>
-                <div class="col-md-2 col-sm-6">
-                    <h3>Settings</h3>
-                    <div class="styled-select">
-                        <select class="form-control" name="lang" id="lang">
-							<option value="English" selected="">English</option>
-							<option value="French">French</option>
-							<option value="Spanish">Spanish</option>
-							<option value="Russian">Russian</option>
-						</select>
-                    </div>
-                    <div class="styled-select">
-                        <select class="form-control" name="currency" id="currency">
-							<option value="USD" selected="">USD</option>
-							<option value="EUR">EUR</option>
-							<option value="GBP">GBP</option>
-							<option value="RUB">RUB</option>
-						</select>
-                    </div>
-                </div>
-            </div>
-            <!-- End row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="social_footer">
-                        <ul>
-                            <li><a href="#"><i class="icon-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-google"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-pinterest"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-vimeo"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-youtube-play"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a>
-                            </li>
-                        </ul>
-                        <p>© Citytours 2015</p>
-                    </div>
+                <div class="social" id="social_footer">
+                    <ul>
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <p id="dev">
+                            <a href="http://www.loquaxti.com.br" target="_blank">
+                                <img src="img/icon_lqx.png" alt=""> Loquax TI. <br>Todos direitos reservados ©.</a>
+                        </p>
+                    </ul>
                 </div>
             </div>
             <!-- End row -->
@@ -802,19 +599,6 @@
         <!-- End container -->
     </footer>
     <!-- End footer -->
-
-    <div id="toTop" style="display: block;"></div>
-    <!-- Back to top button -->
-
-    <!-- Search Menu -->
-    <div class="search-overlay-menu">
-        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
-        <form role="search" id="searchform" method="get">
-            <input value="" name="q" type="search" placeholder="Search...">
-            <button type="submit"><i class="icon_set_1_icon-78"></i>
-			</button>
-        </form>
-    </div>
     <!-- js (Bootstrap's JavaScript) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -6,125 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YourWayTour</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/listitens_page.css">
     <link rel="stylesheet" href="css/vendors/plugins.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
-<body style="overflow: visible;">
-    <div class="parallax-mirror" style="visibility: visible; z-index: 1; position: fixed; top: -300px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 470px; width: 1349px;"><img class="parallax-slider" src="img/home_bg_1.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: 240px; left: -25px; height: 470px; width: 1400px; max-width: none;"></div>
-
-    <!--[if lte IE 8]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
-<![endif]-->
-
-    <div id="preloader" style="display: none;">
-        <div class="sk-spinner sk-spinner-wave">
-            <div class="sk-rect1"></div>
-            <div class="sk-rect2"></div>
-            <div class="sk-rect3"></div>
-            <div class="sk-rect4"></div>
-            <div class="sk-rect5"></div>
-        </div>
-    </div>
-    <!-- End Preload -->
-
-    <div class="layer"></div>
-    <!-- Mobile menu overlay mask -->
-
-    <!-- Header================================================== -->
-    <header class="sticky">
-        <div id="top_line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <ul id="top_links">
-                            <li>
-                                <div class="dropdown dropdown-access">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
-                                    <div class="dropdown-menu">
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <a href="#" class="bt_facebook">
-													<i class="icon-facebook"></i>Facebook </a>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <a href="#" class="bt_paypal">
-													<i class="icon-paypal"></i>Paypal </a>
-                                            </div>
-                                        </div>
-                                        <div class="login-or">
-                                            <hr class="hr-or">
-                                            <span class="span-or">or</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                        </div>
-                                        <a id="forgot_pw" href="#">Forgot password?</a>
-                                        <input type="submit" name="Sign in" value="Sign in" id="Sign_in" class="button_drop">
-                                        <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline">
-                                    </div>
-                                </div>
-                                <!-- End Dropdown access -->
-                            </li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                            <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End row -->
-            </div>
-            <!-- End container-->
-        </div>
-        <!-- End top line-->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <div id="logo">
-                        <a href="index.html"><img src="img/logo.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_normal">
-						</a>
-                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_sticky">
-						</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- container -->
-    </header>
-    <!-- End Header -->
-
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/home_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
-        <div class="parallax-content-1">
-            <div class="animated fadeInDown">
-                <h1>Paris tours</h1>
-                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
-            </div>
-        </div>
-    </section>
-    <!-- End section -->
-
-    <main style="margin-bottom: 353px;">
-
-        <div id="position">
-            <div class="container">
-                <ul>
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Category</a>
-                    </li>
-                    <li>Page active</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Position -->
+<body>
+    <main>
 
         <div class="collapse" id="collapseMap">
             <div id="map" class="map"></div>
@@ -166,7 +55,7 @@
                         <div class="collapse in" id="collapseFilters">
                             <div class="filter_type">
                                 <h6>Price</h6>
-                                <span class="irs js-irs-0 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 15.8898%;">$30</span><span class="irs-to" style="visibility: visible; left: 58.3333%;">$100</span><span class="irs-single" style="visibility: hidden; left: 30.3319%;">$30 — $100</span></span><span class="irs-grid" style="width: 93.2203%; left: 3.28983%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -2.54237%;">0</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: visible; margin-left: -3.60169%;">38</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -3.38983%;">75</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: visible; margin-left: -3.81356%;">113</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -4.44915%;">150</span></span><span class="irs-bar" style="left: 22.0339%; width: 43.5028%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 18.6441%;"></span><span class="irs-slider to type_last" style="left: 62.1469%;"></span></span><input type="text" id="range" name="range" value="" class="irs-hidden-input" readonly="">
+                                <span class="irs js-irs-0 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 16.1017%;">$30</span><span class="irs-to" style="visibility: visible; left: 58.5452%;">$100</span><span class="irs-single" style="visibility: hidden; left: 30.3319%;">$30 — $100</span></span><span class="irs-grid" style="width: 93.2203%; left: 3.28983%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -2.54237%;">0</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: visible; margin-left: -3.60169%;">38</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -3.60169%;">75</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: visible; margin-left: -3.60169%;">113</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -4.44915%;">150</span></span><span class="irs-bar" style="left: 22.0339%; width: 43.5028%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 18.6441%;"></span><span class="irs-slider to type_last" style="left: 62.1469%;"></span></span><input type="text" id="range" name="range" value="" class="irs-hidden-input" readonly="">
                             </div>
                             <div class="filter_type">
                                 <h6>Rating</h6>
@@ -546,7 +435,7 @@
                     </div>
                     <!--End strip -->
 
-                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="ribbon_3"><span>Top rated</span>
@@ -637,7 +526,7 @@
                     </div>
                     <!--End strip -->
 
-                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="ribbon_3"><span>Top rated</span>
@@ -728,7 +617,7 @@
                     </div>
                     <!--End strip -->
 
-                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="ribbon_3"><span>Top rated</span>
@@ -848,88 +737,54 @@
         </div>
         <!-- End container -->
     </main>
-    <!-- End main -->
-
-    <footer class="revealed" style="z-index: 0; position: fixed; bottom: 0px; width: 1349px;">
+    <footer class="revealed">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <h3>Need help?</h3>
-                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
-                    <a href="mailto:help@citytours.com" id="email_footer">help@citytours.com</a>
+                <div class="ajuda">
+                    <h3>Precisa de ajuda?</h3>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527999999999" id="phone"><i class="fa fa-whatsapp"></i>&nbsp; +55 27 99999-9999</a>
+                    <a href="mailto:help@citytours.com" id="email_footer"><i class="fa fa-envelope-o"></i>&nbsp;  suporte@yourwaytour.com</a>
+                    <strong>Pagamentos seguros com</strong>
+                    <p><img src="img/payments.png" alt="Image" data-retina="true" class="img-responsive">
+                    </p>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                    <h3>About</h3>
+                <div class="sobre">
+                    <h3>Sobre</h3>
                     <ul>
-                        <li><a href="#">About us</a>
+                        <li><a href="#">Missão</a>
                         </li>
                         <li><a href="#">FAQ</a>
                         </li>
-                        <li><a href="#">Login</a>
+                        <li><a href="#">Blog</a>
                         </li>
-                        <li><a href="#">Register</a>
-                        </li>
-                        <li><a href="#">Terms and condition</a>
+                        <li><a href="#">Termos &amp; Condições</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                    <h3>Discover</h3>
+                <div class="news" id="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Junte-se a nossa newsletter para manter-se informado sobre ofertas e novidades.</p>
+                    <div id="message-newsletter_2"></div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
+                        <div class="form-group">
+                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Insira seu e-mail" class="form-control">
+                        </div>
+                        <input type="submit" value="Inscrever" class="btn_1" id="submit-newsletter_2">
+                    </form>
+                </div>
+                <div class="social" id="social_footer">
                     <ul>
-                        <li><a href="#">Community blog</a>
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#">Tour guide</a>
+                        <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
-                        <li><a href="#">Wishlist</a>
+                        <li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
                         </li>
-                        <li><a href="#">Gallery</a>
-                        </li>
+                        <p id="dev">
+                            <a href="http://www.loquaxti.com.br" target="_blank">
+                                <img src="img/icon_lqx.png" alt=""> Loquax TI. <br>Todos direitos reservados ©.</a>
+                        </p>
                     </ul>
-                </div>
-                <div class="col-md-2 col-sm-3">
-                    <h3>Settings</h3>
-                    <div class="styled-select">
-                        <select class="form-control" name="lang" id="lang">
-							<option value="English" selected="">English</option>
-							<option value="French">French</option>
-							<option value="Spanish">Spanish</option>
-							<option value="Russian">Russian</option>
-						</select>
-                    </div>
-                    <div class="styled-select">
-                        <select class="form-control" name="currency" id="currency">
-							<option value="USD" selected="">USD</option>
-							<option value="EUR">EUR</option>
-							<option value="GBP">GBP</option>
-							<option value="RUB">RUB</option>
-						</select>
-                    </div>
-                </div>
-            </div>
-            <!-- End row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="social_footer">
-                        <ul>
-                            <li><a href="#"><i class="icon-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-google"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-pinterest"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-vimeo"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-youtube-play"></i></a>
-                            </li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a>
-                            </li>
-                        </ul>
-                        <p>© Citytours 2015</p>
-                    </div>
                 </div>
             </div>
             <!-- End row -->
@@ -937,20 +792,6 @@
         <!-- End container -->
     </footer>
     <!-- End footer -->
-
-    <div id="toTop" style="display: block;"></div>
-    <!-- Back to top button -->
-
-    <!-- Search Menu -->
-    <div class="search-overlay-menu">
-        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
-        <form role="search" id="searchform" method="get">
-            <input value="" name="q" type="search" placeholder="Search...">
-            <button type="submit"><i class="icon_set_1_icon-78"></i>
-			</button>
-        </form>
-    </div>
-    <!-- End Search Menu -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
