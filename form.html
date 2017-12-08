@@ -1,5 +1,4 @@
 <script language=javascript>
-    <!--
     function fone(obj, prox) {
         switch (obj.value.length) {
             case 1:
@@ -155,12 +154,67 @@
         }
     }
     //-->
+    function validarCNPJ(cnpj) {
+
+        cnpj = cnpj.replace(/[^\d]+/g, '');
+
+        if (cnpj == '') return false;
+
+        if (cnpj.length != 14)
+            return false;
+
+        // Elimina CNPJs invalidos conhecidos
+        if (cnpj == "00000000000000" ||
+            cnpj == "11111111111111" ||
+            cnpj == "22222222222222" ||
+            cnpj == "33333333333333" ||
+            cnpj == "44444444444444" ||
+            cnpj == "55555555555555" ||
+            cnpj == "66666666666666" ||
+            cnpj == "77777777777777" ||
+            cnpj == "88888888888888" ||
+            cnpj == "99999999999999")
+            return false;
+
+        // Valida DVs
+        tamanho = cnpj.length - 2
+        numeros = cnpj.substring(0, tamanho);
+        digitos = cnpj.substring(tamanho);
+        soma = 0;
+        pos = tamanho - 7;
+        for (i = tamanho; i >= 1; i--) {
+            soma += numeros.charAt(tamanho - i) * pos--;
+            if (pos < 2)
+                pos = 9;
+        }
+        resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+        if (resultado != digitos.charAt(0))
+            return false;
+
+        tamanho = tamanho + 1;
+        numeros = cnpj.substring(0, tamanho);
+        soma = 0;
+        pos = tamanho - 7;
+        for (i = tamanho; i >= 1; i--) {
+            soma += numeros.charAt(tamanho - i) * pos--;
+            if (pos < 2)
+                pos = 9;
+        }
+        resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+        if (resultado != digitos.charAt(1))
+            return false;
+
+        return true;
+
+    }
 
 </script>
-Tel:
+
 <form id="form" name="form" method="post" action="?">
-    <input name="telefone" type="text" id="telefone" maxLength="13" size="13" onKeyPress="fone(this,document.form.data)"> Formato: (11)1111-1111<br> Data:
+    Tel:<input name="telefone" type="text" id="telefone" maxLength="13" size="13" onKeyPress="fone(this,document.form.data)"> Formato: (11)1111-1111<br> Cel: <input name="celular" type="text" id="celular" maxLength="14" size="13" onKeyPress="fone(this,document.form.data)"> Formato: (11)1111-1111<br> Data:
     <input name="data" type="text" id="data" onKeyPress="formata_data(this,document.form.cpf);return Apenas_Numeros(event);" size="11" maxlength="11"> Formato: MM/DD/AAAA<br> CPF:
     <input name="cpf" type="text" class="imput" id="cpf" size="12" maxlength="11" onKeyPress="return Apenas_Numeros(event);" onBlur="validaCPF(this);">
+    <br> CNPJ:
+    <input name="cnpj" type="text" class="imput" id="cnpj" size="12" maxlength="14" onKeyPress="return Apenas_Numeros(event);" onBlur="validarCNPJ(this);">
     <br>
     <input type="submit" name="enviar" value="Enviar">

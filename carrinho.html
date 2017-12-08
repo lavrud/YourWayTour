@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/vendors/plugins.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/fontello/css/icon_set_1.css">
+    <link rel="stylesheet" href="css/jquery.switch.css">
     <link rel="icon" href="img/favicon.png" />
 </head>
 
@@ -45,7 +47,7 @@
                         <ul id="top_links">
                             <li>
                                 <div class="dropdown dropdown-access">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Logged</a>
                                     <div class="dropdown-menu">
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 col-xs-6">
@@ -74,8 +76,6 @@
                                 </div>
                                 <!-- End Dropdown access -->
                             </li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                            <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,11 +103,11 @@
 
     <section id="hero_2">
         <div class="intro_title animated fadeInDown">
-            <h1>Place your order</h1>
+            <h1>Faça seu pedido</h1>
             <div class="bs-wizard">
 
                 <div class="col-xs-4 bs-wizard-step active">
-                    <div class="text-center bs-wizard-stepnum">Your cart</div>
+                    <div class="text-center bs-wizard-stepnum">Suas compras</div>
                     <div class="progress">
                         <div class="progress-bar"></div>
                     </div>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="col-xs-4 bs-wizard-step disabled">
-                    <div class="text-center bs-wizard-stepnum">Your details</div>
+                    <div class="text-center bs-wizard-stepnum">Alguns detalhes</div>
                     <div class="progress">
                         <div class="progress-bar"></div>
                     </div>
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="col-xs-4 bs-wizard-step disabled">
-                    <div class="text-center bs-wizard-stepnum">Finish!</div>
+                    <div class="text-center bs-wizard-stepnum">Parabéns!</div>
                     <div class="progress">
                         <div class="progress-bar"></div>
                     </div>
@@ -267,7 +267,7 @@
                                 </td>
                                 <td style="width:35%">
                                     <label class="switch-light switch-ios pull-right">
-										<input type="checkbox" name="option_1" id="option_1" checked="" value="">
+										<input type="checkbox" name="option_1" id="option_1"  value="">
 										<span>
                     <span>No</span>
 										<span>Yes</span>
@@ -303,7 +303,7 @@
                                 </td>
                                 <td>
                                     <label class="switch-light switch-ios pull-right">
-										<input type="checkbox" name="option_3" id="option_3" value="" checked="">
+										<input type="checkbox" name="option_3" id="option_3" value="">
 										<span>
                     <span>No</span>
 										<span>Yes</span>
@@ -374,7 +374,7 @@
                                     Bike rent <strong>+$26*</strong>
                                 </td>
                                 <td>
-                                    <label class="switch-light switch-ios pull-right">
+                                    <label class="switch-light switch-ios pull-right style=">
 										<input type="checkbox" name="option_7" id="option_7" value="">
 										<span>
                     <span>No</span>
@@ -438,8 +438,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <a class="btn_full" href="payment.html">Check out</a>
-                        <a class="btn_full_outline" href="#"><i class="icon-right"></i> Continue shopping</a>
+                        <a class="btn_full" href="checkout.html">Check out</a>
+                        <a class="btn_full_outline" href="list_itens.html"><i class="icon-right"></i> Continue comprando</a>
                     </div>
                     <div class="box_style_4">
                         <i class="icon_set_1_icon-57"></i>
@@ -541,15 +541,45 @@
         </form>
     </div>
     <!-- End Search Menu -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- js (Bootstrap's JavaScript) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-    <!-- js (Main script file) -->
-    <script src="js/scripts.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Common scripts -->
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <!-- Specific scripts -->
+    <script src="js/icheck.js"></script>
     <script>
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-grey',
+            radioClass: 'iradio_square-grey'
+        });
+
+    </script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="js/bootstrap-timepicker.min.js"></script>
+    <script>
+        $('input.date-pick').datepicker({
+            startDate: '+0d',
+            format: "dd/mm/yyyy",
+            language: "pt-BR",
+        });
+        $('input.date-pick').datepicker('setDate', 'today');
+        $('input.time-pick').timepicker({
+            minuteStep: 1,
+            showInpunts: false,
+        })
+
+    </script>
+    <!-- Animate scripts -->
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- Retina -->
+    <script src="js/retina.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--<script>
         (function(b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;
             b[l] || (b[l] = function() {
@@ -564,16 +594,7 @@
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
 
-    </script>
-
-    <!-- Jquery -->
-    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/common_scripts_min.js"></script>
-    <script src="js/functions.js"></script>
-
-
-
+    </script>-->
 </body>
 
 </html>
